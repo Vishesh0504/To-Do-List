@@ -1,56 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Conference Registration</title>
-<link rel="stylesheet" href="index.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <title>
+    </title>
 </head>
 <body>
-<div class="container">
-    <h2>Conference Registration Form</h2>
-    <form id="registrationForm">
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required/>
-        <div class="error" id="fullNameError"></div>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required/>
-        <div class="error" id="emailError"></div>
-
-        <label for="jobTitle">Job Title:</label>
-        <input type="text" id="jobTitle" name="jobTitle" required/>
-        <div class="error" id="jobTitleError"></div>
-
-        <label for="companyName">Company Name:</label>
-        <input type="text" id="companyName" name="companyName" required/>
-        <div class="error" id="companyNameError"></div>
-
-        <label for="country">Country:</label>
-        <select id="country" name="country" required></select>
-        <div class="error" id="countryError"></div>
-
-        <label>Workshop Selection:</label>
-        <div>
-            <input type="checkbox" id="workshop1" name="workshop" value="Workshop 1"/>
-            <label for="workshop1">Workshop 1</label>
-        </div>
-        <div>
-            <input type="checkbox" id="workshop2" name="workshop" value="Workshop 2"/>
-            <label for="workshop2">Workshop 2</label>
-        </div>
-        <div class="error" id="workshopError"></div>
-
-        <label>
-            <input type="checkbox" id="terms" name="terms" required/>
-            I agree to the Terms and Conditions
+    <div class=container>
+        <label id ="Name" for="ListName">
+            <input type="text" id="input" name="Heading" placeholder="Untitled">
+            <span id="output"></span>
         </label>
-        <div class="error" id="termsError"></div>
-
-        <button type="submit" class="btn">Submit</button>
-    </form>
-</div>
-
-<script src="index.js"></script>
+        <br>
+        <label id="taskin">
+            <input type="text" id="tasks" name="tasks" placeholder="Enter a new task">
+            <button id='Addtsk'>ADD TASK</button>
+        </label>
+        <div class=Tasklist>
+            <div class=todo>
+                <h2>To-do</h2>
+                <ul class="doing">
+                </ul>
+            </div>
+            <div class=completed>
+                <h2>Completed</h2>
+                <ul class="done">
+                </ul>
+            </div>
+            
+        </div>
+        
+    </div>    
+        
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
